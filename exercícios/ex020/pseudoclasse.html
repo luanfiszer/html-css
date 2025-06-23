@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclasses</title>
+    <style>
+        #boxes{
+            background-color: lightgrey;
+            border: 1px solid black ;
+            text-align: center;
+            display: inline-block;
+            height: 200px;
+            width: 200px;
+            line-height: 200px;
+
+        }
+        #boxes:hover{
+            background-color: rgb(255, 0, 0);
+        }
+
+        #box01:active {
+            background-color: aqua;
+        }
+
+        #box02:active{
+            background-color: rgb(0, 255, 0);
+        }
+        
+        #box03:active{
+            background-color: rgb(0, 26, 255);
+        }
+
+        #box04:active{
+            background-color: rgb(255, 251, 0);
+        }
+    </style>
+</head>
+<body>
+    <div id="boxes">
+        <div id="box01">01</div>
+        <div id="box02">02</div>
+        <div id="box03">03</div>
+        <div id="box04">04</div>
+    </div>
+</body>
+</html>

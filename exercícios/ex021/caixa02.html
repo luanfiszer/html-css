@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body { 
+            background-color: rgb(155, 155, 155);
+            font-family:Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+        #principal {
+            background-color: white;
+            padding: 1px 2px;
+            margin: 5px;
+            border-radius: 5px;
+            box-shadow: 1px 1px 1px black;
+        }
+        
+        main {
+            background-color: white;
+            margin: 20px 5px;
+        }
+
+        main > section {
+            background-color: lightgray;
+            border: 10px solid rgb(255, 255, 255);
+        }
+
+        header > #pages {
+            background-color: lightgrey;
+            margin: 10px 10px;
+        }
+
+        nav#pages > a {
+            color: rgb(71, 71, 71);
+            margin: 20px;
+            text-decoration: unset;
+        }
+
+        nav#pages > a:hover {
+            font-weight: bold;
+        }
+        
+        #topics > a {
+            color: rgb(71, 71, 71);
+            margin: 20px;
+            text-decoration: unset;
+        }
+        
+        footer#rodape {
+            color: white;
+            background-color: black;
+            padding: 4px 1px;
+            margin: 0px;
+            text-align: center;
+
+            
+        }
+
+
+    </style>
+</head>
+<body>
+   <header id="principal">
+    <h1>Meu site</h1>
+        <nav id="pages"> 
+            <a href="">link</a> 
+            <a href="">link</a> 
+            <a href="">link</a> 
+            <a href="">link</a> 
+            <a href="">link</a>
+        </nav>
+   </header>
+   <main>
+    <nav id="topics">
+        <a href="">Esportes</a>
+        <a href="">Política</a>
+        <a href="">Tecnologia</a>
+    </nav>
+    <section>
+        <header id="noticias">
+            <h2>Notícias sobre o Brasil</h2>
+        </header>
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eum pariatur quam maxime enim aspernatur autem id, laborum perferendis, debitis vitae reiciendis neque voluptatibus ad cumque eius assumenda reprehenderit adipisci?</p>
+        </article>
+    </section>
+    <aside></aside class="escritor"> Artigo escrito por José da Silva</aside>
+   </main>
+   <footer id="rodape">Desenvolvido pelo CursoemVideo</footer>
+</body>
+</html>

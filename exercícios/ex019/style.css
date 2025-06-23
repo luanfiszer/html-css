@@ -1,0 +1,42 @@
+
+body {
+    background-color: #004ad36b;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+h1 {
+    color: #00266D;
+}
+
+h2 { 
+    color: #004DDB;
+    font-size: 1.3em;
+    text-shadow: #00266D 1px 1px 2px;
+    font-weight: bold;
+}
+
+h1.Título {
+    background-color: #00266D;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    
+
+}
+
+h1.Subtítulo {
+    font-size: 1.8em;
+    font-weight: bolder;
+}
+
+h2.Intermediário {
+    color:#008bdb;
+}
+
+h2.Avançado {
+    color: #00c1db;
+}
+
+
+
+
