@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position CSS</title>
+    <style>
+        div {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 5px;
+            background-color: black;
+        }
+        .relative {
+            background-color: red;
+            position: relative;
+            top: 10px;
+            left: 10px;
+            z-index: -1; 
+            /*
+            (relative diz respeito ao posicionamento relativo a SI MESMO)
+           
+            z-index => camadas
+            */
+        }
+
+        .absolute {
+            background-color: blue;
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+        }
+
+        .Absolute {
+            position: relative;
+            outline: auto;
+
+            /*
+            GERALMENTE COMBINAREMOS RELATIVE E ABSOLUTE DESSA FORMA PARA POSICIONAR ALGUMA COISA EM RELAÇÃO A OUTRA
+            */
+            
+        }
+
+        .fixed {
+            background-color: rgb(0, 255, 0);
+            
+            position: fixed;
+            top: 200px;
+            right: 20px;
+            z-index: -1;
+            
+            /*
+            USEI O POSITION "ABSOLUTE" COM CSS INLINE PARA CENTRALIZAR O TEXTO DO FIXED
+
+
+            */
+        }
+
+    
+        .sticky {
+            background-color: blueviolet;
+            position: sticky;
+            top: 20px;
+        }
+        
+        .Sticky {
+            position: relative;
+            outline: auto;
+        }
+
+        /* 
+        
+        PROPRIEDADES:   
+        TOP, BOTTOM
+        LEFT, RIGHT
+        INSET
+        Z-INSET
+
+        POSITION:
+        RELATIVE
+        ABSOLUTE
+        FIXED
+        STICKY
+
+        */
+    </style>
+
+
+</head>
+<body>
+    <h1>Position</h1>
+    <p>Nesta demostração você irá controlar o prosicionamento do elemento em vermelho:
+    </p>
+    <section>
+        <h2>Relative</h2>
+        <div></div>
+        <div class="relative"></div>
+        <div></div>
+    </section>
+    
+    <br><br>
+
+     <section class="Absolute">
+        <h2>Absolute</h2>
+        <div></div>
+        <div class="absolute"></div>
+        <div></div>
+    </section>
+    
+    <br><br>
+    
+     <section>
+        <h2>fixed</h2>
+        <div></div>
+        <div class="fixed">
+            <span class="fixed-text" style="position: absolute; top: 20px; left: 10px; ">Fixed</span>
+        </div>
+        <div></div>
+    </section>
+    
+    <br><br>
+    
+     <section class="Sticky">
+        <h2>sticky</h2>
+        <div></div>
+        <div class="sticky"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+
+    <br><br>
+    <strong>PARA VER O EFEITO "STICK", APLICA O "POSITION: STICK" E ARRASTE A BARRA DE ROLAGEM DESTE CONTAINER.</strong>
+    <br><br>
+    <strong>A PROPRIEDADE "INSET" É USADO PARA APLICAR TODAS AS AS CONFIG DE POSICIONAMENTO AO MESMO TEMPO</strong>
+        <br><br><br><br>
+    
+    <aside>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus molestias provident nesciunt vero temporibus quis obcaecati, repudiandae ab aspernatur? Velit quia voluptas, voluptate nostrum vero porro quidem atque laudantium voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit praesentium deleniti, pariatur recusandae quia dolor dicta id! Quaerat minus corrupti accusantium! Ex quaerat laudantium culpa perspiciatis aperiam hic impedit laboriosam!</aside>
+    <aside>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, omnis! Tenetur tempore exercitationem natus excepturi nobis eligendi vero eveniet corporis sed. Eaque harum, esse vero cupiditate repudiandae sunt non illum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum debitis corrupti fugiat, molestias accusantium a assumenda perferendis nobis! Expedita aperiam quam deserunt, in doloribus officiis asperiores ratione ea ipsam laborum.</aside>
+    <aside>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure totam aspernatur vel laborum repellat. Illo rem ab accusamus a sit omnis, error autem voluptates aliquid esse deleniti cupiditate quibusdam soluta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Et qui enim architecto laudantium illum repellendus impedit, temporibus porro deleniti quidem labore nobis ducimus maxime aliquid natus pariatur commodi. Totam, temporibus?</aside>
+    <aside>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus molestias provident nesciunt vero temporibus quis obcaecati, repudiandae ab aspernatur? Velit quia voluptas, voluptate nostrum vero porro quidem atque laudantium voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit praesentium deleniti, pariatur recusandae quia dolor dicta id! Quaerat minus corrupti accusantium! Ex quaerat laudantium culpa perspiciatis aperiam hic impedit laboriosam!</aside>
+    <aside>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, omnis! Tenetur tempore exercitationem natus excepturi nobis eligendi vero eveniet corporis sed. Eaque harum, esse vero cupiditate repudiandae sunt non illum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum debitis corrupti fugiat, molestias accusantium a assumenda perferendis nobis! Expedita aperiam quam deserunt, in doloribus officiis asperiores ratione ea ipsam laborum.</aside>
+    <aside>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure totam aspernatur vel laborum repellat. Illo rem ab accusamus a sit omnis, error autem voluptates aliquid esse deleniti cupiditate quibusdam soluta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Et qui enim architecto laudantium illum repellendus impedit, temporibus porro deleniti quidem labore nobis ducimus maxime aliquid natus pariatur commodi. Totam, temporibus?</aside>
+    <aside>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus molestias provident nesciunt vero temporibus quis obcaecati, repudiandae ab aspernatur? Velit quia voluptas, voluptate nostrum vero porro quidem atque laudantium voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit praesentium deleniti, pariatur recusandae quia dolor dicta id! Quaerat minus corrupti accusantium! Ex quaerat laudantium culpa perspiciatis aperiam hic impedit laboriosam!</aside>
+    <aside>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, omnis! Tenetur tempore exercitationem natus excepturi nobis eligendi vero eveniet corporis sed. Eaque harum, esse vero cupiditate repudiandae sunt non illum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum debitis corrupti fugiat, molestias accusantium a assumenda perferendis nobis! Expedita aperiam quam deserunt, in doloribus officiis asperiores ratione ea ipsam laborum.</aside>
+    <aside>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure totam aspernatur vel laborum repellat. Illo rem ab accusamus a sit omnis, error autem voluptates aliquid esse deleniti cupiditate quibusdam soluta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Et qui enim architecto laudantium illum repellendus impedit, temporibus porro deleniti quidem labore nobis ducimus maxime aliquid natus pariatur commodi. Totam, temporibus?</aside>
+    <aside>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus molestias provident nesciunt vero temporibus quis obcaecati, repudiandae ab aspernatur? Velit quia voluptas, voluptate nostrum vero porro quidem atque laudantium voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit praesentium deleniti, pariatur recusandae quia dolor dicta id! Quaerat minus corrupti accusantium! Ex quaerat laudantium culpa perspiciatis aperiam hic impedit laboriosam!</aside>
+    <aside>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, omnis! Tenetur tempore exercitationem natus excepturi nobis eligendi vero eveniet corporis sed. Eaque harum, esse vero cupiditate repudiandae sunt non illum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum debitis corrupti fugiat, molestias accusantium a assumenda perferendis nobis! Expedita aperiam quam deserunt, in doloribus officiis asperiores ratione ea ipsam laborum.</aside>
+    <aside>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure totam aspernatur vel laborum repellat. Illo rem ab accusamus a sit omnis, error autem voluptates aliquid esse deleniti cupiditate quibusdam soluta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Et qui enim architecto laudantium illum repellendus impedit, temporibus porro deleniti quidem labore nobis ducimus maxime aliquid natus pariatur commodi. Totam, temporibus?</aside>
+</html>
