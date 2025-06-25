@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores II</title>
+
+    <style>
+    div:not(.delete) {
+        width: 60px;
+        height: 60px;
+        border: solid;
+        margin: 5px;
+        text-align: center;
+        line-height: 350%;
+    }    
+
+    .boxhover:hover {
+        background-color: lightblue;
+        
+    }
+
+    .not div:not(.box03) {
+        background-color: lightcoral;
+    }
+
+    div:has(:hover) {
+        background-color: brown;
+    }
+    
+    /* EU APLIQUEI BORDER SOLID EM TODAS AS DIVS, MAS COMO EU TIVE QUE COLOCAR UMA DIV DENTRO DA OUTRA, NO EXEMPLO DO "HAS()", USEI O SELETOR ":NOT()" NO PRIMEIRO PARA EXCLUIR AS DUAS BOXES QUE ESTAVAM SENDO FORMADAS
+    */
+
+    .child :nth-child(2) {
+        background-color: blueviolet;
+    }
+
+    /*----------------------------------------------------*/
+
+
+    </style>
+    
+</head>
+<body>
+    <h1>Seletores pt.2</h1>
+    
+    <section>
+        <h2>Pseudo-classes</h2>
+        <h3>hover</h3>
+        <div class="boxhover">1</div>
+        <h3>not()</h3>
+        <span class="not">
+            <div >2</div>
+            <div class="box03">3</div>
+            <div>4</div>
+        </span>
+
+        <h3>has()</h3>
+        <div class="delete">
+            <div class="boxhover">5</div>
+        </div>
+        
+        <!-- :root ja foi treinado em variáveis -->
+        
+        <h3>nth-child</h3>
+        <span class="child">
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+        </span>
+
+    </section>
+
+    <section>
+        <h2>Pseudo-elements</h2>
+        <!-- Já treinei no curso do Guanabara -->
+    </section>
+
+</body>
+</html>
