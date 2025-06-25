@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Váriaveis em CSS</title>
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+       
+        @font-face {
+            font-family: 'Android'; src: url(idroid.otf) format(opentype);
+        }
+       
+       :root {
+            --cor1: #a72424;
+            --cor2: #1a1aaa;
+            --cor3: #2d852d;
+            --cor04: lightblue;
+
+            --fonte01: Arial, Helvetica, sans-serif ;
+            --fonte02: "Bebas Neue", sans-serif;
+            --fonte03: 'Android';
+        }
+
+        span {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            margin: 50px;
+        }
+
+        span > div {
+            position: absolute;
+            top: 20px; ;
+            left: 25px;
+        }
+
+        span {
+            background-color: var(--cor2);
+        }
+
+        .box01 {
+            background-color: var(--cor1);
+        }
+
+        .box02 {
+            background-color: var(--cor3);
+        }
+
+        .box03 {
+            background-color: var(--cor04);
+        }
+        
+        p.fonte01 {
+            font-family: var(--fonte01);
+        }
+
+        p.fonte02 {
+            font-family: var(--fonte02);
+        }
+
+        p.fonte03 {
+            font-family: var(--fonte03);
+        }
+
+
+        /*------------------------------------------------------------*/
+
+        h2 {
+            font-family: sans-serif;
+            margin-top: 20px;
+        }
+
+        .box-inline {
+            background-color: #ffcccb;
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+            border: 1px solid red;
+        /* Vai ignorar width/height */
+        }
+
+        .box-block {
+            background-color: #add8e6;
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+            border: 1px solid blue;
+        }
+
+        .box-inline-block {
+            display: inline-block;
+            background-color: #90ee90;
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+            border: 1px solid green;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Teste de variaveis</h1>
+    <section>
+    <h2>Cores</h2>
+        <span>
+            <div>1</div>
+        </span>
+        <span>
+            <div>2</div>
+        </span>
+        <span>
+            <div>3</div>
+        </span>
+        <span class="box01">
+            <div>1</div>
+        </span>
+        <span class="box02">
+            <div>2</div>
+        </span>
+        <span class="box03">
+            <div>3</div>
+        </span>
+        
+    </section>
+
+   
+    <section>
+        <h2>Fontes</h2>
+        <p class="fonte01">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quo ratione asperiores, exercitationem iure tempora iusto possimus ullam quod quis tenetur, eligendi repellendus aperiam suscipit doloribus mollitia iste sapiente. Explicabo.</p>
+        <p class="fonte02">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis voluptas deleniti provident dignissimos, recusandae animi excepturi dolores dolorum repudiandae voluptatum illo porro, tempora qui nisi non commodi, adipisci sit. Hic.</p>
+        
+        <p class="fonte03">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt necessitatibus cum fugiat consequuntur beatae quae corporis magnam autem. Quos error velit cum eius illum sunt reprehenderit. Excepturi, suscipit iste. Modi.</p>
+    </section>
+
+<br><br>
+    <h1>Relembrando box model</h1>
+
+    <h2>Span padrão (inline)</h2>
+        <span class="box-inline">Caixa A</span>
+        <span class="box-inline">Caixa B</span>
+
+    <h2>Div padrão (block)</h2>
+        <div class="box-block">Caixa A</div>
+        <div class="box-block">Caixa B</div>
+
+    <h2>Span com display: inline-block</h2>
+        <span class="box-inline-block">Caixa A</span>
+        <span class="box-inline-block">Caixa B</span>
+
+
+</body>
+</html>
