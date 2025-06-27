@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+.container {
+  display: flex;
+  max-width: 800px;
+  margin: auto;
+     /* === Eixo principal (flex-direction) === */
+  /* flex-direction: row;            /* padrão, itens em linha, da esquerda para a direita */ 
+  /* flex-direction: row-reverse;    /* itens em linha, da direita para a esquerda */ 
+  /*flex-direction: column;         /* itens em coluna, de cima para baixo */ 
+  /* flex-direction: column-reverse; /* itens em coluna, de baixo para cima */ 
+
+  /* === Alinhamento no eixo principal (justify-content) === */
+  /* justify-content: flex-start;  /* itens encostados no início do eixo */ 
+  /* justify-content: flex-end;    /* itens encostados no fim do eixo */ 
+  /* justify-content: center;      /* itens centralizados no eixo */ 
+  /*justify-content: space-between; /* espaço máximo entre itens */ 
+  /* justify-content: space-around;  /* espaço igual ao redor de cada item */ 
+  /* justify-content: space-evenly;  /* espaços iguais entre e nas extremidades */ 
+  /* justify-content: start;       /* início lógico (LTR/RTL) */ 
+  /* justify-content: end;         /* fim lógico (LTR/RTL) */ 
+  /* justify-content: left;        /* inicia à esquerda (ignora lógica de escrita) */ 
+  /* justify-content: right;       /* inicia à direita (ignora lógica de escrita) */ 
+
+  /* === Alinhamento no eixo cruzado (align-items) === */
+  /*align-items: stretch;      /* padrão, itens esticam para preencher */ 
+  /* align-items: flex-start;   /* itens no início do eixo cruzado */ 
+  /* align-items: flex-end;     /* itens no fim do eixo cruzado */ 
+  /* align-items: center;       /* itens centralizados no eixo cruzado */ 
+  /* align-items: baseline;     /* itens alinhados pela linha de base do texto */ 
+  /* align-items: start;        /* início lógico do eixo cruzado */ 
+  /* align-items: end;          /* fim lógico do eixo cruzado */ 
+
+  /* === Quebra de linha (flex-wrap) === */
+  /* flex-wrap: nowrap;        /* padrão, sem quebra, tudo em uma linha */ 
+  /* flex-wrap: wrap;          /* permite quebra em múltiplas linhas */ 
+  /* flex-wrap: wrap-reverse;  /* quebra, mas inverte a ordem das linhas */ 
+
+  /* === Distribuição de linhas (align-content) === */
+  /* align-content: stretch;       /* linhas esticam para preencher o contêiner */ 
+  /* align-content: flex-start;    /* linhas agrupadas no início */ 
+  /* align-content: flex-end;      /* linhas agrupadas no fim */ 
+  /* align-content: center;        /* linhas centralizadas */ 
+  /* align-content: space-between; /* espaço entre linhas */ 
+  /* align-content: space-around;  /* espaço ao redor das linhas */ 
+  /* align-content: space-evenly;  /* espaços iguais entre e nas extremidades */ 
+  /* align-content: start;         /* início lógico */ 
+  /* align-content: end;           /* fim lógico */ 
+
+  /* === Gap entre itens === */
+  /*gap: 10px;          /* espaço uniforme entre linhas e colunas */ 
+  /* row-gap: 10px;      /* espaço entre linhas */ 
+  /* column-gap: 20px;   /* espaço entre colunas */ 
+  
+
+}
+
+.item {
+  width: 60px;
+  height: 60px;
+}
