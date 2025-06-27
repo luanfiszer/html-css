@@ -2,7 +2,7 @@
 
 .container {
   display: flex;
-  max-width: 800px;
+  max-width: 600px;
   margin: auto;
      /* === Eixo principal (flex-direction) === */
   /* flex-direction: row;            /* padrão, itens em linha, da esquerda para a direita */ 
@@ -26,7 +26,7 @@
   /*align-items: stretch;      /* padrão, itens esticam para preencher */ 
   /* align-items: flex-start;   /* itens no início do eixo cruzado */ 
   /* align-items: flex-end;     /* itens no fim do eixo cruzado */ 
-  /* align-items: center;       /* itens centralizados no eixo cruzado */ 
+   /*align-items: center;       /* itens centralizados no eixo cruzado */ 
   /* align-items: baseline;     /* itens alinhados pela linha de base do texto */ 
   /* align-items: start;        /* início lógico do eixo cruzado */ 
   /* align-items: end;          /* fim lógico do eixo cruzado */ 
@@ -52,10 +52,14 @@
   /* row-gap: 10px;      /* espaço entre linhas */ 
   /* column-gap: 20px;   /* espaço entre colunas */ 
   
+  
+  align-items:center;
+  flex-wrap: wrap;
+  gap: 1%;
 
 }
 
 .item {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
 }
