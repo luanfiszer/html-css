@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+
+.container {
+    display: grid;
+    height: 100vh;
+   
+    /* grid-template: ; SHORTHAND */
+   /* grid-template-columns: repeat(3, 200px) ;
+    grid-template-rows: repeat(3, 200px); */
+    
+    grid-template:
+    "A B B" 80px
+    "A B B" 40px
+    "A C D" 50px / 80px 1fr 2fr;
+
+    gap: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+
+div :nth-child(1) {
+    
+   /* grid-column:; */
+   /* grid-column-start: ; */
+   /* grid-column-end: ; */
+
+   grid-area: A;
+
+}
+
+div:nth-child(2) {
+    grid-area: B;
+}
+
