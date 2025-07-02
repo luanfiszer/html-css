@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+
+    grid-template: repeat(3, 100px)/repeat(3, 100px);
+    /* SHORTHAND DE 
+    GRID-TEMPLATE-COLUMNS e GRID-TEMPLATE-ROWS */
+    gap: 8px;
+/*-----------------------------------------------------------*/
+                                                             
+    align-content: space-around;
+    justify-content: space-around;
+    place-content: ; /*Junção dos dois acima*/
+
+    align-items: ;
+    justify-items: ;
+    place-items: ; /*Junção dos dois acima*/
+     /*O "...-itens" tira as alturas e colunas quando usado*/
+
+
+/*------------------------------------------------------------*/
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+
+}
+
+.grid > div {
+    background-color: cornflowerblue;
+}
+
+div:nth-child(5) {
+    /*----------------------------------------------------*/
+    
+    align-self: ;
+    justify-self: ;
+    place-self: ;   /*Junção dos dois acima*/
+
+    /*----------------------------------------------------*/
+}
+
+/*GRID AUTO*/
+
